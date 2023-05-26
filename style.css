@@ -13,7 +13,10 @@ h1{
     font-size: 50px;
     margin-top: 200px;
     line-height: -10px;
+    margin-bottom: 30px;
     gap: 10px;
+    background-image: linear-gradient(to right,green, red);
+    -webkit-text-fill-color: t;
 }
 h4{
     color: white;
@@ -21,3 +24,45 @@ h4{
 h6{
     color: white;
 }
+.body{
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    height: 200px;
+    background: transparent;
+    font-family: bruno, sans-serif;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.body ul{
+    display: flex;
+}
+.body ul li{
+    list-style: none;
+}
+.d1{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: dav2 1.5s linear infinite;
+}
+@keyframes dav2{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
